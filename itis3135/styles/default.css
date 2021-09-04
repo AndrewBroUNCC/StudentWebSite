@@ -1,0 +1,79 @@
+
+body{
+
+    background-color: darkgray;
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lists {
+    font-family: cursive, monospace;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+header {
+    font-family: cursive, monospace;
+    text-align: center;
+    margin-top: 75px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 0px;
+} 
+
+footer {
+    font-family: Lobster, cursive, monospace;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h2 {
+    font-family: cursive, monospace;
+    text-align: center;
+    margin-top: -40px;
+}
+
+h1, h3 {
+    font-family: cursive, monospace;
+    text-align: center;
+    line-height: 10px;
+    margin-top: 0px;
+}
+
+.hyperlink {
+    font-family: Lobster, cursive, monospace;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 75px;
+}
+
+.hyperlink-text {
+    font-family: Lobster, cursive, monospace;
+    text-decoration: none;
+    color: darkred;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-family: Lobster, cursive, monospace;
+
+}
+
+nav {
+    text-align: center;
+}
+
+.page-built {
+    margin-top: -50px;
+}
