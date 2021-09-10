@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Do NOT use black, white, Times New roman (or Times), Comics Sans, or Papyrus.-->
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" type="text/css"> 
+	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+	<title> Andrew Brown, ITIS-3135-051, Employee Table </title>
+</head>
+
+<body class="table-html">
+	
+	<header>
+		<h1> Andrew Brown >> ITIS3135-051 </h1>
+	</header>
+	
+<div class="hyperlink">	
+	<nav>
+		<a class="hyperlink-text" href="introduction.html">Introduction </a>
+		||
+		<a class="hyperlink-text" href="contract.html">Contract</a>
+        ||
+        <a class="hyperlink-text" href="tables.html">Employee Table</a>
+	</nav>
+</div>
+	<main>
+	
+		<h2>Employee Table</h2>
+
+        <!-- 7 to 10 people that will work for my design company
+            Lisa Derosa - LisaDe1337@lolenterprises.com - 3,
+            Stephen Brown - SteveBro@gmail.com - 27,
+            Kaylee Brown - KayBug@Unccinc.com -23,
+            Justin Cox - JayCox@yahoo.com - 32,
+            Jenna Cox - JayBug@aolenterprises.com - 25,
+            Steve Fulton - Stefulton@gmail.com - 2,
+            Dakouta krout - Dekrout@mountainenterprises.com - 4,
+            service total = 116
+        -->
+        <h3>My Tabular Data</h3>
+
+            <ol class="employee-list">
+                <li>Lisa Derosa LisaDe1337@lolenterprises.com 3</li>
+                <li>Stephen Brown SteveBro@gmail.com 27</li>
+                <li>Kaylee Brown KayBug@Unccinc.com 23</li>
+                <li>Justin Cox JayCox@yahoo.com 32</li>
+                <li>Jenna Cox JayBug@aolenterprises.com 25</li>
+                <li>Steve Fulton Stefulton@gmail.com 2</li>
+                <li>Dakouta krout Dekrout@mountainenterprises.com 4</li>
+            </ol>
+
+		
+        <h3>Employee Data in Simple Table</h3>
+		<!--Create an HTML table for this using the Primary table elements table, tr (table row),
+             th (table header) and td (table data).   It should have Name, Email, and Years of Service
+              as table headers in the top row. Then add a row for each person. -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>E-mail</th>
+                    <th class="right">Years of Service</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lisa Derosa</td>
+                    <td>LisaDe1337@lolenterprises.com</td>
+                    <td class="right">3</td>
+                </tr>
+                <tr>
+                    <td>Stephen Brown</td>
+                    <td>SteveBro@gmail.com</td>
+                    <td class="right">27</td>
+                </tr>
+                <tr>
+                    <td>Kaylee Brown</td>
+                    <td>KayBug@Unccinc.com</td>
+                    <td class="right">23</td>
+                </tr>
+                <tr>
+                    <td>Justin Cox</td>
+                    <td>JayCox@yahoo.com</td>
+                    <td class="right">32</td>
+                </tr>
+                <tr>
+                    <td>Jenna Cox</td>
+                    <td>JayBug@aolenterprises.com</td>
+                    <td class="right">25</td>
+                </tr>
+                <tr>
+                    <td>Steve Fulton</td>
+                    <td>Stefulton@gmail.com</td>
+                    <td class="right">2</td>
+                </tr>
+                <tr>
+                    <td>Dakouta krout</td>
+                    <td>Dekrout@mountainenterprises.com</td>
+                    <td class="right">4</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <br>
+
+        <h3>Employee Data in Complex Table</h3>
+
+        <table>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col" class="right">Years of Service</th>
+                    <th scope="col">Yearly Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="row">sales</th>
+                    <td>Lisa Derosa</td>
+                    <td>LisaDe1337@lolenterprises.com</td>
+                    <td class="right">3</td>
+                    <td class="right">60,000.00</td>
+                </tr>
+                <tr>
+                    <td>Stephen Brown</td>
+                    <td>SteveBro@gmail.com</td>
+                    <td class="right">27</td>
+                    <td class="right"> 45,000.00</td>
+                </tr>
+                <tr>
+                    <td>Kaylee Brown</td>
+                    <td>KayBug@Unccinc.com</td>
+                    <td class="right">23</td>
+                    <td class="right"> 55,000.00</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="row">marketing</th>
+                    <td>Justin Cox</td>
+                    <td>JayCox@yahoo.com</td>
+                    <td class="right">32</td>
+                    <td class="right"> 115,000.00</td>
+                </tr>
+                <tr>
+                    <td>Jenna Cox</td>
+                    <td>JayBug@aolenterprises.com</td>
+                    <td class="right">25</td>
+                    <td class="right"> 100,000.00</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="row">publishing</th>
+                    <td>Steve Fulton</td>
+                    <td>Stefulton@gmail.com</td>
+                    <td class="right">2</td>
+                    <td class="right"> 35,000.00</td>
+                </tr>
+                <tr>
+                    <td>Dakouta krout</td>
+                    <td>Dekrout@mountainenterprises.com</td>
+                    <td class="right">4</td>
+                    <td class="right"> 35,000.00</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td class="right">years: 116</td>
+                    <td class="right">sum of salaries: 445,000.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+	</main>
+	
+	<footer>
+		<nav class="hyperlink">
+			<!--anchor links for navigation-->
+			<a class="hyperlink-text" target=_blank  href="https://webpages.uncc.edu/abrow359/">Charlotte.edu</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://github.com/andrewbrouncc">Github</a>
+			||
+			<a class="hyperlink-text" href="https://AndrewBroUNCC.github.io/" target=_blank >Github.io</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://AndrewBroUNCC.github.io/itis3135">ITIS 3135 Github Pages</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://www.codecademy.com/">Codecademy</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://www.freecodecamp.org/abrow359uncc">freeCodeCamp</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://jsfiddle.com/">JSFiddle</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://www.linkedin.com/in/andrew-brown-23791321b/">LinkedIn</a>
+		</nav>
+		
+		<br />
+		
+		<p class="page-built">Page built by ABrow Designs</p>
+		
+		<div class="bottom-pictures">
+		<!-- more anchor links -->
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Ftables.html" target=_blank>
+				<img src="images/button-valid-html5.gif" width="88" height="31" alt="link to html validation.">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Ftables.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+		</div>
+
+	</footer>
+	
+</body>
+
+</html>
