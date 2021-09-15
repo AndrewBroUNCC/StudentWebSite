@@ -6,6 +6,45 @@ body{
     font-family: cursive, monospace;
 }
 
+.newsletter {
+    background-color: rgb(121, 114, 114);
+}
+
+[type="text"], [type="email"], [type="number"] {
+    background-color: orange;
+}
+
+
+
+.intro {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+label {
+    color: rgb(243, 107, 57);
+}
+
+.button-news {
+    background: linear-gradient(45deg, rgb(119, 77, 77), rgb(196, 151, 68),orange, rgb(139, 45, 45));
+    font-size: 20px;
+    box-shadow: 2px 5px 10px black;
+}
+
+#dropdown {
+    background-color: orange;
+    font-size: 16px;
+    
+}
+
+#subscribe-form {
+    font-family: monospace, cursive;
+    color: orangered;
+    display: table;
+    margin: auto;
+}
+
 .table-html {
 
     background-color: darkgray;

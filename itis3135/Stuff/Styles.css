@@ -1,0 +1,81 @@
+Body {
+    color: black;
+    background: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+header {
+    margin-top: 10vh;
+}
+
+/* w3schools.com is how i learnt to do this
+https://www.w3schools.com/css/css3_fonts.asp
+used a free font website https://befonts.com/comic-papyrus-font-finally.html
+with a free to public license*/
+@font-face {
+    font-family: "comic papyrus";
+    src: url(comic-papyrus/Comic-Papyrus.ttf);
+}
+
+#comic-papyrus {
+    font-family: "comic papyrus";
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+#times {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+.papyrus {
+    font-family: papyrus;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 60px;
+    margin-right: 70px;
+}
+
+#comic-sans {
+    font-family: "comic sans MS";
+    font-size: 3em;
+    background-color: blueviolet;
+    color:cadetblue;
+}
+
+nav, .hyperlink-text {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*
+.float-left {
+    float: left;
+    width: 100vh;
+}
+*/
+
+.float-right {
+    text-align: center;
+}
+
+.car {
+    height: 400px;
+    width: 400px;
+}
+
+.bullet {
+    text-align: center;
+    border-style: dotted dashed solid double;
+    border-width: 1px 2.2px 5px 10px;
+}

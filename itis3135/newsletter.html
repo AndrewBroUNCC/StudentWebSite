@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Do NOT use black, white, Times New roman (or Times), Comics Sans, or Papyrus.-->
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" type="text/css"> 
+	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+	<title> Andrew Brown, ITIS-3135-051, Form </title>
+</head>
+
+<body class="newsletter">
+	
+	<header>
+		<h1> Andrew Brown >> ITIS3135-051 </h1>
+	</header>
+	
+<div class="hyperlink">	
+	<nav>
+		<a class="hyperlink-text" href="introduction.html">Introduction </a>
+		||
+		<a class="hyperlink-text" href="contract.html">Contract</a>
+		||
+		<a class="hyperlink-text" href="tables.html">Employee Table</a>
+        ||
+        <a class="hyperlink-text" href="newsletter.html">Newsletter</a>
+	</nav>
+</div>
+	<main>
+	
+        <!--Modify your page to add a form. This form should be setup for viewers to express an interest in receiving
+		your company's newsletter. The page should ask the user to enter their information (name, phone number, and email
+		address) to receive a newsletter or coupons for the coffee shop. The form should have at least 3 textboxes, 1 set
+		of checkboxes, 1set of radio buttons, 1 select box (drop down menu), and 1 button for submitting. These form elements
+		could be used to ask the user about any information you like. In order to validate, the form must contain the 
+		action attribute. You can use action=”#” for this activity, to specify that nothing happens.
+        Use each of the following attributes in at least once in your form:
+        required
+        size
+        placeholder
+        Add label tag to each input type. 
+        Use at least 3 of the self-validating form controls of HTML5
+        i.e. specific input types such as number, email, url.
+        Verify there are no errors.-->		
+		<h2>DrewJava's NewsLetter</h2>
+		
+		<p class="intro" >sign up today and receive monthly news letters and benefits from the Drew Java Newsletter! All you 
+			have to do is enter in some information to begin receiving your first issues.
+		</p>
+
+		<form id="subscribe-form" action="#">
+			<!--https://riptutorial.com/html/example/2259/input-validation. learnt some from this website.-->			
+			<label for="fullname">Full Name:
+				<br> 
+			<input id="fullname" type="text" name="name" required placeholder="Last, First Name" size="35" minlength="5" maxlength="25">
+			</label>
+			
+			<br>
+			
+			<label for="phone-number">Phone Number: <br>
+				<input id="phone-number" type="number" name="phone-number" required placeholder="Phone Number">
+			</label>
+
+			<br>
+
+			<label for="email">E-mail:
+				<br> 
+			<input id="email" type="email" name="email" required placeholder="E-mail address" size="35" minlength="7" maxlength="35">
+			</label>
+			
+			<br>
+			<br>
+			<hr>
+			<h4>What time of the day do you prefer to receiving your newsletter</h4>
+
+			|
+			<label for="morning">Morning: 
+			<input type="radio" name="morning-afternoon-night" id="morning">
+			</label>
+			|
+			<label for="afternoon">Afternoon: 
+				<input type="radio" name="morning-afternoon-night" id="afternoon">
+			</label>
+			|
+			<label for="night">Night: 
+				<input type="radio" name="morning-afternoon-night" id="night">
+			</label>
+			|
+
+
+			<br>
+			<br>
+			<hr>
+
+			<h4>How do you enjoy your coffee select all that apply:</h4>
+
+			<label for="no-sugar">No Sugar:
+				<input type="checkbox" name="coffee-type" id="no-sugar" checked>
+			</label>
+
+			<br>
+
+			<label for="light-sugar">Light Sugar:
+				<input type="checkbox" name="coffee-type" id="light-sugar">
+			</label>
+
+			<br>
+
+			<label for="heavy-sugar">Heavy Sugar
+				<input type="checkbox" name="coffee-type" id="heavy-sugar">
+			</label>
+
+			<br>
+
+			<label for="light-cream">Light Cream:
+				<input type="checkbox" name="coffee-type" id="light-cream">
+			</label>
+
+			<br>
+
+			<label for="heavy-cream">Heavy Cream:
+				<input type="checkbox" name="coffee-type" id="heavy-cream">
+			</label>
+
+			<br>
+
+			<label for="no-cream">No Cream:
+				<input type="checkbox" name="coffee-type" id="no-cream">
+			</label>
+
+			<br>
+
+			<!--https://www.w3schools.com/tags/tag_select.asp
+				credit for how to do a drop down menu. did not copy just used to learn how it works.-->
+
+			<hr>
+
+			<label for="dropdown">What size coffee do you normally get?
+
+				<br>
+				
+
+				<select name="coffee-size" id="dropdown">
+					<option value="small">Small Coffee</option>
+					<option value="medium">Medium Coffee</option>
+					<option value="Large">Large Coffee</option>
+				</select>
+			</label>
+
+			<br>
+			<br>
+
+			<button type="submit" class="button-news" >Subscribe</button>
+
+		</form>
+
+
+	</main>
+	
+	<footer>
+		<nav class="hyperlink">
+			<!--anchor links for navigation-->
+			<a class="hyperlink-text" target=_blank  href="https://webpages.uncc.edu/abrow359/">Charlotte.edu</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://github.com/andrewbrouncc">Github</a>
+			||
+			<a class="hyperlink-text" href="https://AndrewBroUNCC.github.io/" target=_blank >Github.io</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://AndrewBroUNCC.github.io/itis3135">ITIS 3135 Github Pages</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://www.codecademy.com/">Codecademy</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://www.freecodecamp.org/abrow359uncc">freeCodeCamp</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://jsfiddle.com/">JSFiddle</a>
+			||
+			<a class="hyperlink-text" target=_blank href="https://www.linkedin.com/in/andrew-brown-23791321b/">LinkedIn</a>
+		</nav>
+		
+		<br />
+		
+		<p class="page-built">Page built by ABrow Designs</p>
+		
+		<div class="bottom-pictures">
+		<!-- more anchor links -->
+			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Fnewsletter.html" target=_blank>
+				<img src="images/button-valid-html5.gif" width="88" height="31" alt="link to html validation.">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Fnewsletter.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target=_blank>
+				<img src="images/button-valid-css.gif" width="88" height="31" alt="link to html validation.">
+			</a>
+		</div>
+
+	</footer>
+	
+</body>
+
+</html>
