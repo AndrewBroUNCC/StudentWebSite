@@ -25,7 +25,9 @@ body{
 }
 
 .evaluation-table {
-    position: relative;
+    display:grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
 }
 
 .intro {
@@ -92,7 +94,7 @@ h2 {
     margin-top: -40px;
 }
 
-h1, h3 {
+h1, h3, h4 {
     font-family: cursive, monospace;
     text-align: center;
     line-height: 10px;
@@ -171,4 +173,16 @@ tbody tr:nth-child(odd) td {
     display: table;
     margin:auto;
 
+}
+
+.great-webpage {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.bad-webpage {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
 }
