@@ -1,17 +1,27 @@
 
+:root {
+    --background-color: rgb(153, 145, 145);
+    --main-color: rgb(100, 69, 58);
+    --table-button-color: rgb(223, 132, 99);
+    --box-shadow-color: black;
+    --table-accent: rgb(121, 93, 56);
+    --hyperlink-color: rgb(139, 29, 29);
+    --table-text-color: white;
+}
+
 body{
 
-    background-color: darkgray;
-    color: orangered;
+    background-color: var(--background-color);
+    color: var(--main-color);
     font-family: cursive, monospace;
 }
 
 .newsletter {
-    background-color: rgb(121, 114, 114);
+    background-color: var(--background-color);
 }
 
 [type="text"], [type="email"], [type="number"] {
-    background-color: orange;
+    background-color: var(--table-button-color);
 }
 
 
@@ -23,32 +33,32 @@ body{
 }
 
 label {
-    color: rgb(243, 107, 57);
+    color: var(--main-color);
 }
 
 .button-news {
-    background: linear-gradient(45deg, rgb(119, 77, 77), rgb(196, 151, 68),orange, rgb(139, 45, 45));
+    background: linear-gradient(45deg, var(--table-button-color), var(--table-button-color), var(--hyperlink-color));
     font-size: 20px;
-    box-shadow: 2px 5px 10px black;
+    box-shadow: 2px 5px 10px var(--box-shadow-color);
 }
 
 #dropdown {
-    background-color: orange;
+    background-color: var(--table-button-color);
     font-size: 16px;
     
 }
 
 #subscribe-form {
     font-family: monospace, cursive;
-    color: orangered;
+    color: var(--table-accent);
     display: table;
     margin: auto;
 }
 
 .table-html {
 
-    background-color: darkgray;
-    color: orangered;
+    background-color: var(--background-color);
+    color: var(--main-color);
     font-family: cursive, monospace;
     width: 750px;
     margin: 0 auto;
@@ -98,7 +108,7 @@ h1, h3 {
 .hyperlink-text {
     font-family: Lobster, cursive, monospace;
     text-decoration: none;
-    color: darkred;
+    color: var(--hyperlink-color);
 }
 
 a:hover {
@@ -130,8 +140,8 @@ table {
 }
 
 thead {
-    background-color: rgba(255, 68, 0, 0.514);
-    color: white;
+    background-color: var(--background-color);
+    color: var(--table-text-color);
 }
 
 th, td {
@@ -150,8 +160,8 @@ th, td {
 }
 
 tbody tr:nth-child(odd) td {
-    background-color: orangered;
-    color: white;
+    background-color: var(--table-button-color);
+    color: var(--table-text-color);
 }
 
 .employee-list {
