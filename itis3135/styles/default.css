@@ -1,12 +1,12 @@
 
 :root {
-    --background-color: rgb(153, 145, 145);
-    --main-color: rgb(100, 69, 58);
+    --background-color: rgb(240, 226, 211);
+    --main-color: rgb(79, 94, 104);
     --table-button-color: rgb(223, 132, 99);
     --box-shadow-color: black;
     --table-accent: rgb(121, 93, 56);
     --hyperlink-color: rgb(139, 29, 29);
-    --table-text-color: white;
+    --table-text-color: rgb(70, 67, 67);
 }
 
 body{
@@ -24,7 +24,9 @@ body{
     background-color: var(--table-button-color);
 }
 
-
+.evaluation-table {
+    position: relative;
+}
 
 .intro {
     max-width: 700px;
