@@ -225,3 +225,13 @@ tbody tr:nth-child(odd) td {
     margin-left: 46.5%;
     text-decoration: underline;
 }
+/* Polygon */
+#polygonInfoSender {
+    margin-left: 41%;
+    width: 200px;
+}
+
+::placeholder {
+    color: var(--hyperlink-color);
+    font-weight: bold;
+}
