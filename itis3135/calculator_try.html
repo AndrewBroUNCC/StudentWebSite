@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" type="text/css"> 
+        <link href="styles/default.css" rel="stylesheet" type="text/css" >
+        <script src="scripts/calculator_try.js"></script>
+        <title> Andrew Brown, ITIS-3135-051, Calculator </title>
+</head>
+<body>
+    <header>
+        <h1> Andrew Brown >> ITIS3135-051 >> Calculator </h1>
+    </header>
+
+    <div class="hyperlink">	
+        <nav>
+            <a class="hyperlink-text" href="index.html">index</a>
+            ||
+            <a class="hyperlink-text" href="introduction.html">Introduction </a>
+            ||
+            <a class="hyperlink-text" href="tables.html">Employee Table</a>
+            ||
+            <a class="hyperlink-text" href="newsletter.html">Newsletter</a>
+            ||
+            <a class="hyperlink-text" href="website_evaluations.html">Website Evaluations</a>
+            ||
+            <a class="hyperlink-text" href="Stuff/GREAT ()WEBSITE.htm">Bad Design</a>
+            ||
+            <a class="hyperlink-text" href="brand-angry-dyslexic-beaver.html">Brand</a>
+            ||
+            <a class="hyperlink-text" href="script-demo.html">Script Demo</a>
+            ||
+            <a class="hyperlink-text" href="polygon.html">Polygon Project</a>
+            ||
+            <a class="hyperlink-text" href="calculator_try.html">Calculator</a>
+        </nav>
+    </div>
+    <main>
+
+        <h2>Basic Calculator</h2>
+
+        <div class="calculator">
+            <div class="calculator__display" id="display_text">
+                0
+            </div>
+            <div class="calculator__keys">
+                <button class="key--operator" data-action="add" onclick="numberAdd(true)">+</button>
+                <button class="key--operator" data-action="subtract" onclick="numberSubtract(true)">-</button>
+                <button class="key--operator" data-action="multiply" onclick="numberMultiply(true)">&times;</button>
+                <button class="key--operator" data-action="divide" onclick="numberDivide(true)">&divide;</button>
+                <button class="calculatorButton" onclick="takeNumber(7)">7</button>
+                <button class="calculatorButton" onclick="takeNumber(8)">8</button>
+                <button class="calculatorButton" onclick="takeNumber(9)">9</button>
+                <button class="calculatorButton" onclick="takeNumber(4)">4</button>
+                <button class="calculatorButton" onclick="takeNumber(5)">5</button>
+                <button class="calculatorButton" onclick="takeNumber(6)">6</button>
+                <button class="calculatorButton" onclick="takeNumber(1)">1</button>
+                <button class="calculatorButton" onclick="takeNumber(2)">2</button>
+                <button class="calculatorButton" onclick="takeNumber(3)">3</button>
+                <button class="calculatorButton" onclick="takeNumber(0)">0</button>
+                <button class="calculatorButton" data-action="decimal" onclick='takeNumber(".")'>.</button>
+                <button class="calculatorButton" data-action="clear" id="allClearbutton" onclick="allClear()">AC</button>
+                <button class="key--equal" data-action="calculate" onclick="equalFunction()">=</button>
+            </div>
+        </div>
+        
+        
+
+    </main>
+    <footer>
+        <nav class="hyperlink">
+            <a class="hyperlink-text" target=_blank  href="https://webpages.uncc.edu/abrow359/">Charlotte.edu</a>
+            ||
+            <a class="hyperlink-text" target=_blank href="https://github.com/andrewbrouncc">Github</a>
+            ||
+            <a class="hyperlink-text" href="https://AndrewBroUNCC.github.io/" target=_blank >Github.io</a>
+            ||
+            <a class="hyperlink-text" target=_blank href="https://AndrewBroUNCC.github.io/itis3135">ITIS 3135 Github Pages</a>
+            ||
+            <a class="hyperlink-text" target=_blank href="https://www.codecademy.com/">Codecademy</a>
+            ||
+            <a class="hyperlink-text" target=_blank href="https://www.freecodecamp.org/abrow359uncc">freeCodeCamp</a>
+            ||
+            <a class="hyperlink-text" target=_blank href="https://jsfiddle.com/">JSFiddle</a>
+            ||
+            <a class="hyperlink-text" target=_blank href="https://www.linkedin.com/in/andrew-brown-23791321b/">LinkedIn</a>
+        </nav>
+        
+        <br />
+        
+        <p class="page-built">Page built by Angry Dyslexic Beaver Co.</p>
+        
+        <div class="bottom-pictures">
+        <!-- more anchor links -->
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Fpolygon.html" target=_blank>
+                <img src="images/button-valid-html5.gif" width="88" height="31" alt="link to html validation.">
+            </a>
+
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fwebpages.uncc.edu%252Fabrow359%252Fpolygon.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target=_blank>
+                <img src="images/button-valid-css.gif" width="88" height="31" alt="link to html validation.">
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
