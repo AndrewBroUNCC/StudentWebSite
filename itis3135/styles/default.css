@@ -52,11 +52,40 @@ label {
     
 }
 
+
+/*Newsletter (forms input css)*/
 #subscribe-form {
     font-family: monospace, cursive;
     color: var(--table-accent);
     display: table;
     margin: auto;
+}
+
+/*over 4 different types of css styles*/
+#subscribe-form > label > input {
+    font-family: cursive, monospace, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: oblique;
+    background-color: var(--table-button-color);
+    border-style: dotted;
+    border-width: thick;
+}
+ /*another style change that lighten up when ur focus on the line*/
+#subscribe-form > label > #phone-number:focus, #fullname:focus, #email:focus {
+    opacity: .95;
+}
+
+#subscribe-form > label {
+    font-size: 20px;
+    font-family: cursive, monospace, sans-serif;
+    font-weight: bold;
+    color: var(--table-text-color);
+}
+
+
+#subscribe-form > label > #phone-number, #fullname, #email {
+    width: 100%;
 }
 
 .table-html {

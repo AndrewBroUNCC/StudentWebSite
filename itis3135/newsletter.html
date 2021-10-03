@@ -60,17 +60,20 @@
 			have to do is enter in some information to begin receiving your first issues.
 		</p>
 
+		<!--
+			In the css file looke for subscribe-form to see the 4 types of css changes for input
+		-->
 		<form id="subscribe-form" action="#">
 			<!--https://riptutorial.com/html/example/2259/input-validation. learnt some from this website.-->			
 			<label for="fullname">Full Name:
 				<br> 
-			<input id="fullname" type="text" name="name" required placeholder="Last, First Name" size="35" minlength="5" maxlength="25">
+				<input id="fullname" type="text" name="name" required placeholder="Last, First Name" size="35" minlength="5" maxlength="25">
 			</label>
 			
 			<br>
 			
 			<label for="phone-number">Phone Number: <br>
-				<input id="phone-number" type="number" name="phone-number" required placeholder="Phone Number">
+				<input id="phone-number" type="number" name="phone-number" required placeholder="Phone Number" size="35" minlength="5" maxlength="25">
 			</label>
 
 			<br>
