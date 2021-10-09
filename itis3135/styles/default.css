@@ -3,6 +3,7 @@
     --background-color: rgb(240, 226, 211);
     --main-color: rgb(79, 94, 104);
     --table-button-color: rgb(223, 132, 99);
+    --table-button-hover-color: rgb(223, 132, 99, .9);
     --box-shadow-color: black;
     --table-accent: rgb(121, 93, 56);
     --hyperlink-color: rgb(139, 29, 29);
@@ -307,7 +308,57 @@ tbody tr:nth-child(odd) td {
     background-color: rgb(223, 132, 99, .9);
 }
 
-.key--equal {
+.key-equal {
     grid-row: 2 / span 4;
     grid-column: 4;
+}
+/*===============Array.html===================*/
+
+#arrayH2 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#employeeList, .arrayLabels, #salaryInput {
+    width: 30vw;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--table-button-color);
+    margin-left: 35%;
+    margin-right: auto;
+}
+
+#employeeList, #salaryInput {
+    background-color: var(--table-button-color);
+    color: var(--main-color);
+}
+
+.arrayLabels {
+    text-align: left;
+}
+
+#addSalary, #displaySalary, #displayResults {
+    margin-top: 1.5em;
+    width: 10vw;
+    height: 6vh;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px .5px;
+}
+
+#addSalary:hover, #displaySalary:hover, #displayResults:hover {
+   background-color: var(--table-text-color);
+   color: var(--table-button-color);
+}
+
+#display_property, #display_table {
+    width: 30vw;
+    height: auto;
+    margin-left: 35%;
+    margin-right: auto;
+}
+
+#display_property {
+    font-size: 20px;
+    font-weight: bold;
 }

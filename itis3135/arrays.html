@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<!-- Do NOT use black, white, Times New roman (or Times), Comics Sans, or Papyrus.-->
 <head>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" type="text/css"> 
-	<link href="styles/default.css" rel="stylesheet" type="text/css" >
-	<title> Andrew Brown, ITIS-3135-051, Introduction </title>
-</head>
-
-<body>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/default.css" type="text/css">
+    <title> Andrew Brown, ITIS-3135-051, Arrays </title>
 	
-	<header>
-		<h1> Andrew Brown >> ITIS3135-051 >> Introduction </h1>
-	</header>
-	<div class="hyperlink">	
+</head>
+<body>
+    <header>
+        <h1> Andrew Brown >> ITIS-3135-051 >> Arrays </h1>
+    </header>
+    <div class="hyperlink">	
         <nav>
             <a class="hyperlink-text" href="index.html">index</a>
             ||
@@ -39,39 +35,43 @@
             <a class="hyperlink-text" href="arrays.html">Arrays</a>
         </nav>
     </div>
-	<main>
-	
-		<h2>Introduction</h2>
-		
-		<figure>
-			<a href=#>
-				<img src="images/life-is-a-splash.jpg" alt="picture at the splash park" width=300 height=350>
-			</a>
-			
-			<figcaption>Life is a Splash!</figcaption>
-		</figure>
-		<div class="lists">
-			<ul>
-				<li>Personal background: I grew up in AL, moved to Charlotte NC got my associates degree at CPCC and I am currently attending UNCC. </li>
-				<li>Professional: I currently have an understanding of java and am currently going to school to learn html css and javascript.</li>
-				<li>Academic background: I have my HS diploma and an associates degree. im currently working on a Bachelor of science. </li>
-				<li>Background in the subject matter of this course: So far I still am very new when it comes to the majority of the materials in the course.</li>
-				<li>Primary Computer Platform: Windows 10 is my preferred operating system. </li>
-				<li>Courses I'm Taking and the reason for each:
-					<ul>
-						<li>ITIS-3135 - Web App Design and Development - To learn how to design and develop applications on websites.</li>
-						<li>ITSC-3688 - Comp & Their Impact on Society - A writing intensive class that helps the students understand online computer ethnics and polices.</li>
-						<li>Math-1242 - Calculus II - to learn techniques of integration to evaluate integrals (area under a curve from two points).</li>
-					</ul>
-				</li>
-				<li>Funny story or interesting item about yourself to remeber you by: I'm over worked and under paid.</li>
-				<li>I'd also like to share: I am a very optimistic person.</li>
-			</ul>
-		</div>
 
-	</main>
-	
-	<footer>
+    <h2 id="arrayH2">Array</h2>
+
+    <br>
+
+    <label for="employee-name" class="arrayLabels">Select Employee: </label>
+    <select id="employeeList">
+        <option>--Select an Employee--</option>
+        <option value="Lisa Derosa">Lisa Derosa</option>
+        <option value="Stephen Brown">Stephen Brown</option>
+        <option value="Kaylee Brown">Kaylee Brown</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="salaryInput" class="arrayLabels">Salary Amount:</label>
+    
+    <input type="text" id="salaryInput" name="salaryInput" required placeholder="--Employee Salary Here--">
+
+    <br>
+    <br>
+    <!--this button should take the value of the option in the select box-->
+    <button id="addSalary" onclick="addSalary()">addSalary</button>
+
+    <button id="displaySalary" onclick="displaySalary()">displaySalary</button>
+    
+    <button id="displayResults" onclick="displayResults()">displayResults</button>
+
+    <div id="display_property">
+        <!--this will take in the innerHtml-->
+    </div>
+
+    <table id="display_table"></table>
+    <script src="scripts/arrays.js"></script>
+
+    <footer>
 		<nav class="hyperlink">
 			<!--anchor links for navigation-->
 			<a class="hyperlink-text" target=_blank  href="https://webpages.uncc.edu/abrow359/">Charlotte.edu</a>
@@ -107,7 +107,5 @@
 		</div>
 
 	</footer>
-	
 </body>
-
 </html>
