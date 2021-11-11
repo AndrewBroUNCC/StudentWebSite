@@ -8,10 +8,15 @@ addSalary(), displayResults(), and displaySalary() and attach them
 to the click events of the buttons. 
 */
 
+window.onload = function() 
+{
+    document.getElementById("employeeList").focus();
+}
 
 
 //3 functions line 29
-function addSalary() {
+function addSalary() 
+{
     var personTest = document.getElementById("employeeList").value;
     var personSalary = document.getElementById("salaryInput").value;
 
@@ -20,31 +25,38 @@ function addSalary() {
     //test before pushing salary.
     personSalary = parseFloat(personSalary).toFixed(2);
 
-    if (!isNaN(personSalary) && personSalary >= 0) {
+    if (!isNaN(personSalary) && personSalary >= 0) 
+    {
         salaries.push(personSalary);
         person.push(personTest);
     }
-    else {
-        if( isNaN(personSalary) ) {
+    else 
+    {
+        if( isNaN(personSalary) ) 
+        {
             displayMessage = " Salary must be a number.";
         }
-        else {
+        else 
+        {
             displayMessage = " Salary must not be negative.";
         }
         //================ * Need to displayMessage! * ============
         document.getElementById("display_property").innerHTML = ("<br><br><br><p>" + displayMessage + "</p>");
     }
-    
+    document.getElementById("employeeList").focus();
     //alert(personSalary); it WORKS!
 }
 
-function displayResults() {
+function displayResults() 
+{
     //salaries
     let avg = 0.0
     let highest = 0.0
-    for(var i = 0; i < salaries.length; i++){
+    for(var i = 0; i < salaries.length; i++)
+    {
         avg += parseFloat(salaries[i]);
-        if(salaries[i] > highest) {
+        if(salaries[i] > highest)
+        {
             highest = salaries[i];
         }
     }
@@ -53,11 +65,13 @@ function displayResults() {
 }
 
 //line 14
-function displaySalary() {
+function displaySalary() 
+{
     document.getElementById("display_table").innerHTML = ("<thead><tr><th>Employee  </th><th>Salary  </th></tr></thead><tbody>");
     
-    for(var i = 0; i < person.length; i++) {
-    document.getElementById("display_table").innerHTML += ("<tr><td>" + person[i] + "</td><td class='right'>" + salaries[i] + "<td></tr>");
+    for(var i = 0; i < person.length; i++) 
+    {
+        document.getElementById("display_table").innerHTML += ("<tr><td>" + person[i] + '</td><td class="right" colspan="2">' + salaries[i] + "<td></tr>");
     }
     document.getElementById("display_table").innerHTML += ("<tbody>");
 }

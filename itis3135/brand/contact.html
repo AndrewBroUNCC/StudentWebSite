@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angry Dyslexic Beaver Co.: {Contact Page}</title>
+    <!--https://coolors.co/8a4f7d-887880-88a096-bbab8b-ef8275-->
+    <link rel="stylesheet" href="styles/default.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/w3.js"></script>
+    
+
+</head>
+<body>
+
+<header>
+    
+    <figure w3-include-HTML="components/header.html"></figure>
+    
+</header>
+
+    
+
+    <main>
+        
+        <h2>
+            Contact Page
+        </h2>
+        
+        <p>
+            Welcome to the Contact page. please fill out and select the type of service you are interesting in to begin.
+            We will send you an email from a represenative from the sales department to see what we will be able to do for you.
+        </p>
+
+        <form action="#">
+
+            <label for="firstName" >First Name:</label>
+            <br>
+            <input type="text" placeholder="-First Name-" required id="firstName">
+            <br>
+            <label for="phone" >Phone Number:</label>
+            <br>
+            <input type="tel" placeholder="999-999-9999" required id="phone">
+            <br>
+            <label for="userEmail" >Email:</label>
+            <br>
+            <input type="email" placeholder="-Email address-" id="userEmail">
+            <br>
+            <label for="serviceTypeMontly" >Monthly Updates:</label>
+            <input type="radio" name="subcriptionType" value="monthlyService" id="serviceTypeMonthly">
+            
+            <label for="serviceTypeBi" >Bi-Monthly Updates:</label>
+            <input type="radio" name="subcriptionType" value="biMonthlyService" id="serviceTypeBi">
+            <br>
+
+            <p id="displayContactInfo"></p>
+
+            <br>
+            <input id="contactShowButton" type="button" value="Submit Button">
+        </form>
+
+        <p class="contact large">
+            Angry Dyslexic Beaver Co.
+            <br>
+            456 old town rd. 28041
+            <br>
+            Cornelius, NC
+            <br>
+            ADBeaver@ADBltd.com
+            <br>
+            (256) 555-4545
+        </p>
+        
+        
+    </main>
+    
+    <footer w3-include-HTML="components/footer.html"></footer>
+
+    <div class="footerValidation">
+        <br>
+        <!-- more anchor links -->
+        &#8516;
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Fitis3135%2Fbrand%2Fcontact.html" target=_blank>
+            Validate Html
+        </a>
+        &#8516;
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fwebpages.uncc.edu%252Fabrow359%252Fitis3135%252Fbrand%252Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target=_blank>
+            Validate CSS
+        </a>
+        &#8516;
+        <br>
+    </div> 
+    
+    
+    
+    <script src="scripts/brand_show.js"></script>
+
+    <script src="scripts/brand.js"></script>
+
+</body>
+</html>

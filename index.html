@@ -1,1 +1,129 @@
-I'm Andrew Brown and this is the root of my website.
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="styles/default.css" type="text/css">
+    <title>Student Website [Home Page]</title>
+
+</head>
+
+<body>
+    
+        <header>
+            <h1>Student Website</h1>
+        </header>
+
+        <nav>
+            |
+            <a href="index.html">Student Home Page</a>
+            &#8516;
+            <a href="contract.html">Contract</a>
+            &#8516;
+            <a href="interesting_student_facts.html">Interesting Facts</a>
+            &#8516;
+            <a href="itis3135/">Class Home Page</a>
+            |
+        </nav>
+
+    <main>
+        
+        <h2>Home Page</h2>
+
+        <figure>
+            <img src="images/andrew_brown_500x666.jpg" alt="Picture of Andrew Brown">
+            <figcaption>Andrew Brown in his natural habitat</figcaption>
+        </figure>
+
+        <h3>Andrew Brown</h3>
+
+        <p>Hello everyone,  welcome to my student webpage. I am chasing after a carrer in web and moblie 
+            application Development! I have had so much fun learning how web dev works that I guess I just 
+            can not quit it (lol). Below is a list of personal hobbies I like to do.
+        </p>
+        
+        <h3>Personal Hobbies</h3>
+        
+        <ul>
+
+            <li>I play video games when i have free time. (currently on Assassin's Creed Valhalla)</li>
+
+            <li>Watching movies and television shows.</li>
+
+            <li>I love some good food (who doesnt right), as well as trying new food.</li>
+
+            <li>I try to listen to audibles at least 30mins a day.</li>
+
+            <li>I love art and the mint museum</li>
+
+            <li>I also like listening to 80's rock and the 2000's alternative music.</li>
+
+        </ul>
+        
+        <h3>Thoughts on College in general</h3>
+        
+        <p>
+            I think there alot of concepts that were thaught that I will never use sadly. I would of 
+            prefered more time in the course that I had my focus on. online classes are quite a bit harder
+
+            example: I had calculus 1 online and I think the teacher was dead. He would not respond to emails and
+            would not post anything ever. the entire class was graded online automatically. YouTube taught me calculus.
+
+            How could that ever be appropiate? 
+            
+            Now I am finally into my third year and also enrolled in a University instead of a community college! 
+        </p>
+        
+        <h3>Personal Qoute of the Day</h3>
+        
+        <p>
+            "Live your life looking up becuase it passes quicker when your looking down"
+            <br>
+            - Andrew Brown
+            <br>
+            (I thought this up. So if someone else said it already, mybad!)
+        </p>
+
+    </main>
+
+    <footer>
+
+        <nav>
+            |
+            <a href="index.html">Student Home Page</a>
+            &#8516;
+            <a href="contract.html">Contract</a>
+            &#8516;
+            <a href="interesting_student_facts.html">Interesting Facts</a>
+            &#8516;
+            <a href="itis3135/index.html">Class Home Page</a>
+            |
+            <br>
+            <br>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2F">Validate Html</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Validate Css</a>
+        </nav>
+
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" 
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+        crossorigin="anonymous">
+    </script>
+
+    <!--<script src="scripts/student_info.js"></script>-->
+
+    <script>
+       $(document).ready(function() //a function is placed inside the Jquery ready method.
+        {  
+            console.log("got here!");
+            $("#header").load('studentInfo.html');
+            console.log("got to the end");
+        });
+    </script>
+</body>
+
+</html>

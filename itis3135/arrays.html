@@ -3,109 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/default.css" type="text/css">
-    <title> Andrew Brown, ITIS-3135-051, Arrays </title>
-	
+    <title>Andrew Brown &#8486; ITIS3135 &#8486; Arrays</title>
+	<script src="scripts/w3.js"></script>
 </head>
 <body>
-    <header>
-        <h1> Andrew Brown >> ITIS-3135-051 >> Arrays </h1>
-    </header>
-    <div class="hyperlink">	
-        <nav>
-            <a class="hyperlink-text" href="index.html">index</a>
-            ||
-            <a class="hyperlink-text" href="introduction.html">Introduction </a>
-            ||
-            <a class="hyperlink-text" href="tables.html">Employee Table</a>
-            ||
-            <a class="hyperlink-text" href="newsletter.html">Newsletter</a>
-            ||
-            <a class="hyperlink-text" href="website_evaluations.html">Website Evaluations</a>
-            ||
-            <a class="hyperlink-text" href="Stuff/GREAT ()WEBSITE.htm">Bad Design</a>
-            ||
-            <a class="hyperlink-text" href="brand-angry-dyslexic-beaver.html">Brand</a>
-            ||
-            <a class="hyperlink-text" href="script-demo.html">Script Demo</a>
-            ||
-            <a class="hyperlink-text" href="polygon.html">Polygon Project</a>
-            ||
-            <a class="hyperlink-text" href="calculator_try.html">Calculator</a>
-            ||
-            <a class="hyperlink-text" href="arrays.html">Arrays</a>
-        </nav>
-    </div>
+    <main>
+        
+        <header w3-include-HTML="components/class_header.html"></header>
+        
+        <div>	
+            <nav class="side-bar" w3-include-HTML="components/class_header_navigation.html"></nav>
+        </div>
 
-    <h2 id="arrayH2">Array</h2>
+        <h2 id="arrayH2">Array</h2>
 
-    <br>
+        <br>
 
-    <label for="employee-name" class="arrayLabels">Select Employee: </label>
-    <select id="employeeList">
-        <option>--Select an Employee--</option>
-        <option value="Lisa Derosa">Lisa Derosa</option>
-        <option value="Stephen Brown">Stephen Brown</option>
-        <option value="Kaylee Brown">Kaylee Brown</option>
-    </select>
+        <label for="employeeList" class="arrayLabels">Select Employee: </label>
+        <select id="employeeList">
+            <option>--Select an Employee--</option>
+            <option value="Lisa Derosa">Lisa Derosa</option>
+            <option value="Stephen Brown">Stephen Brown</option>
+            <option value="Kaylee Brown">Kaylee Brown</option>
+        </select>
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <label for="salaryInput" class="arrayLabels">Salary Amount:</label>
-    
-    <input type="text" id="salaryInput" name="salaryInput" required placeholder="--Employee Salary Here--">
+        <label for="salaryInput" class="arrayLabels">Salary Amount:</label>
+        
+        <input type="text" id="salaryInput" name="salaryInput" required placeholder="--Employee Salary Here--">
 
-    <br>
-    <br>
-    <!--this button should take the value of the option in the select box-->
-    <button id="addSalary" onclick="addSalary()">addSalary</button>
+        <br>
+        <br>
+        <!--this button should take the value of the option in the select box-->
+        <button id="addSalary" onclick="addSalary()">addSalary</button>
 
-    <button id="displaySalary" onclick="displaySalary()">displaySalary</button>
-    
-    <button id="displayResults" onclick="displayResults()">displayResults</button>
+        <button id="displaySalary" onclick="displaySalary()">displaySalary</button>
+        
+        <button id="displayResults" onclick="displayResults()">displayResults</button>
 
-    <div id="display_property">
-        <!--this will take in the innerHtml-->
-    </div>
+        <div id="display_property">
+            <!--this will take in the innerHtml-->
+        </div>
 
-    <table id="display_table"></table>
-    <script src="scripts/arrays.js"></script>
+        <table id="display_table"></table>
+    </main>
 
     <footer>
-		<nav class="hyperlink">
-			<!--anchor links for navigation-->
-			<a class="hyperlink-text" target=_blank  href="https://webpages.uncc.edu/abrow359/">Charlotte.edu</a>
-			||
-			<a class="hyperlink-text" target=_blank href="https://github.com/andrewbrouncc">Github</a>
-			||
-			<a class="hyperlink-text" href="https://AndrewBroUNCC.github.io/" target=_blank >Github.io</a>
-			||
-			<a class="hyperlink-text" target=_blank href="https://AndrewBroUNCC.github.io/itis3135">ITIS 3135 Github Pages</a>
-			||
-			<a class="hyperlink-text" target=_blank href="https://www.codecademy.com/">Codecademy</a>
-			||
-			<a class="hyperlink-text" target=_blank href="https://www.freecodecamp.org/abrow359uncc">freeCodeCamp</a>
-			||
-			<a class="hyperlink-text" target=_blank href="https://jsfiddle.com/">JSFiddle</a>
-			||
-			<a class="hyperlink-text" target=_blank href="https://www.linkedin.com/in/andrew-brown-23791321b/">LinkedIn</a>
-		</nav>
-		
-		<br />
-		
-		<p class="page-built">Page built by ABrow Designs</p>
-		
-		<div class="bottom-pictures">
-		<!-- more anchor links -->
-			<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Fintroduction.html" target=_blank>
-				<img src="images/button-valid-html5.gif" width="88" height="31" alt="link to html validation.">
-			</a>
 
-			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target=_blank>
-				<img src="images/button-valid-css.gif" width="88" height="31" alt="link to html validation.">
-			</a>
-		</div>
+		<nav w3-include-HTML="components/class_footer_navigation.html"></nav>
+		
+		<p class="page-built"><a href="brand-angry-dyslexic-beaver.html">&copy; Angry Dyslexic Beaver co.</a></p>
+		
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fabrow359%2Fitis3135%2Farrays.html">
+            <img src="images/button-valid-html5.gif" width="88" height="31" alt="link to html validation.">
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fwebpages.uncc.edu%252Fabrow359%252Fitis3135%252Farrays.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <img src="images/button-valid-css.gif" width="88" height="31" alt="link to html validation.">
+        </a>
+
+        <p></p>
+
+        <script src="scripts/arrays.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" 
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+            crossorigin="anonymous">
+        </script>
+
+        <script src="scripts/html_component_run_script.js"></script>
 
 	</footer>
+
 </body>
+
 </html>

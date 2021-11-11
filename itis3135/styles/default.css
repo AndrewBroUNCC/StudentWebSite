@@ -98,7 +98,7 @@ label {
     margin: 0 auto;
 }
 
-button {
+button, .button-line  {
     font-family: monospace, cursive;
     font-weight: bold;
     margin-left: 45%;
@@ -107,10 +107,11 @@ button {
     background-color: var(--table-button-color);
 }
 
-.lists {
-    font-family: cursive, monospace;
-    margin-left: 200px;
-    margin-right: 200px;
+ul, ol{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: sans-serif;
+    line-height: 30px;
 }
 
 header {
@@ -138,6 +139,15 @@ h2 {
     text-align: center;
 }
 
+.validateButton {
+    background-color: var(--table-button-color);
+    color: var(--table-text-color);
+}
+
+.validateButton:hover {
+    background-color: var(--table-button-hover-color);
+}
+
 p {
     font-family: cursive, monospace;
     text-align: left;
@@ -148,26 +158,33 @@ p {
     margin-right: 25%;
 }
 
+
 h1, h3, h4 {
     font-family: cursive, monospace;
     text-align: center;
     line-height: 30px;
     margin-top: 0px;
     margin-bottom: 16px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.hyperlink {
-    font-family: Lobster, cursive, monospace;
+h1 {
+    margin-bottom: 64px;
+}
+
+nav {
+    text-decoration: none;
+    font-family: sans-serif;
     text-align: center;
     font-size: 18px;
     margin-top: 40px;
     margin-bottom: 75px;
+    color: var(--hyperlink-color);
 }
 
-.hyperlink-text {
-    font-family: Lobster, cursive, monospace;
+a {
+    font-family: sans-serif;
     text-decoration: none;
     color: var(--hyperlink-color);
 }
@@ -182,13 +199,25 @@ figure {
 }
 
 figcaption {
+    text-decoration: none;
     font-style: italic;
-    font-family: Lobster, cursive, monospace;
+    font-family: sans-serif;
 
 }
 
-nav {
+.side-bar>a {
     text-align: center;
+    display:block;
+   
+}
+
+.side-bar {
+    margin-right: 85%;
+    margin-left: 5%;
+    margin-top: -10px;
+    float: left;
+    position:absolute;
+    /*outline: solid 3px var(--hyperlink-color);*/
 }
 
 .page-built {
@@ -274,6 +303,11 @@ tbody tr:nth-child(odd) td {
     
 }
 
+.button-line {
+    display: inline-block;
+    text-align: center;
+   margin-right: 7%;
+}
 
 .calculator__display {
     background-color: black;
@@ -361,4 +395,27 @@ tbody tr:nth-child(odd) td {
 #display_property {
     font-size: 20px;
     font-weight: bold;
+}
+
+/*===============slide show beavers==============================================================*/
+
+.beaver_slideshow {
+    display: inline-block;
+    margin-left: 22%;
+    list-style-type: none;
+}
+
+.beaver_slideshow>li{
+    background-color: white;
+    padding: 0px 0px 0px 0px;
+}
+
+.beaver_slideshow>li:hover {
+    outline: solid 3px black;
+   
+}
+
+.beaver_main_image {
+    margin-left: -10%;
+    outline: solid 3px black;
 }

@@ -1,0 +1,184 @@
+:root {
+    --razzmic-berry-color: #8A4F7D;
+    --rocket-metallic-color: #887880;
+    --morning-blue-color: #88A096;
+    --khaki-web-color: #BBAB8B;
+    --salmon-color: #EF8275;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: var(--khaki-web-color);
+    color: var(--razzmic-berry-color);
+    align-content: center;
+    border: 8px none var(--razzmic-berry-color);
+    border-bottom: dotted;
+    text-align: center;
+    font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--morning-blue-color);
+    color: var(--razzmic-berry-color);
+    margin: 0;
+    border: 8px solid var(--razzmic-berry-color);
+    
+}
+
+h1 {
+    text-align: center;
+    width: 90vw;
+    height: auto;
+    
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--khaki-web-color);
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 4px none var(--razzmic-berry-color);
+    border-left-style: double;
+    border-right-style: double;
+    border-bottom: dotted;
+}
+
+
+
+p, form{
+    line-height: 1.5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    text-align: left;
+    border: 0px solid var(--razzmic-berry-color);
+    border-width: 8px 4px 4px 4px;
+    font-size: 18px;
+    border-top-style: double;
+    background-color: var(--khaki-web-color);
+    font-weight: bold;
+}
+
+ul {
+    display: grid;
+    justify-content: center;
+    list-style-type: square;
+    line-height: 1.5em;
+    font-size: 18px;
+    background-color: var(--salmon-color);
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 4px none var(--razzmic-berry-color);
+    border-left-style: double;
+    border-right-style: double;
+    font-weight: bolder;
+    margin-top: -1em;
+    margin-bottom: -1em;
+}
+
+.contact {
+    border-width: 0;
+    text-align: center;
+    background-color: var(--salmon-color);
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 4px none var(--razzmic-berry-color);
+    border-left-style: double;
+    border-right-style: double;
+    border-bottom: dotted;
+    font-weight: bolder;
+    padding-top: 2%;
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+div {
+    text-decoration: none;
+    display: inline;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.inlineNav{
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: var(--razzmic-berry-color);
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    text-align: center;
+}
+
+a:hover {
+    font-size: 20px;
+    color: #55274b;
+    
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.footerValidation {
+    display: block;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+.large {
+    font-size: 24px;
+    line-height: 36px;
+    height: 35vh;
+    width: auto;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.full_screen {
+    font-size: 24px;
+    line-height: 24px;
+    height: 35vh;
+    width: auto;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+form > input, form > select {
+    font-size: 24px;
+    color: var(--razzmic-berry-color);
+    background-color: var(--morning-blue-color);
+    display: block;
+}
+
+form {
+    display: block;
+    padding-left: 25%;
+}
+
+#displayContactInfo {
+    width: 80%;
+    height: auto;
+    margin: 0;
+    margin-left: -20%;
+    margin-right: 20%;
+    text-align: left;
+    padding: 0;
+    border: none;
+}
