@@ -16,32 +16,20 @@
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
         crossorigin="anonymous">
     </script>
+    <script src="../scripts/w3.js"></script>
 
 </head>
 
 <body>
 
-    <header>
-        <!--insert logo into header-->
-        <h1><img src="images/orchard_catering_logo_300x300.png" alt="This is going to be a slide show"><br>Orchard Catering</h1>
-    </header>
+    <header w3-include-HTML="components/header.html"></header>
 
-        <nav>
-            &#x272D;
-            <a href="index.html">Home Page</a>
-            &#x272D;
-            <a href="menu.html">Menu</a>
-            &#x272D;
-            <a href="store_hours.html">Store Hours</a>
-            &#x272D;
-            <a href="donations.html">Donations</a>
-            &#x272D;
-            <a href="about_us.html">About Us</a>
-            &#x272D;
-        </nav>
+    <nav w3-include-HTML="components/navigation.html"></nav>
 
     <main>
-        <h2>Donations</h2>
+        <div class="homePageBox">
+            <h2>Donations</h2>
+        </div>
 
         <br>
         <div class="homePageDiv">
@@ -59,37 +47,12 @@
 
     </main>
 
-    <footer>
-		<nav>
-            &#x272D;
-            <a href="index.html">Home Page</a>
-            &#x272D;
-            <a href="menu.html">Menu</a>
-            &#x272D;
-            <a href="store_hours.html">Store Hours</a>
-            &#x272D;
-            <a href="donations.html">Donations</a>
-            &#x272D;
-            <a href="about_us.html">About Us</a>
-            &#x272D;
-        </nav>
-		
-		<p class="page-built"><a href="../brand/index.html">&copy; Angry Dyslexic Beaver co.</a></p>
-		
-		<div class="validateButtons">
-            
-            <a href="https://validator.w3.org/check?uri=referer">
-                Validate Html
-            </a>
-    
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                Validate CSS
-            </a>
-		</div>
+    <!--footer navigation-->
+    <footer w3-include-HTML="components/footer.html"></footer>
 
-	</footer>
+    <!--js code to add in the components.-->
+    <script src="scripts/component_script.js"></script>  
 
-    <script src="client_project.js"></script>
 </body>
 
 </html>

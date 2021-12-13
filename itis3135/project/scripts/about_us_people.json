@@ -1,0 +1,18 @@
+{"staffList":[
+	{
+		"name": "Lisa Derosa",
+		"about": "Founder of Orchard Catering and lover of fine foods."
+	},
+	{
+		"name": "Andrew Brown",
+		"about": "Vice President of Orchard Catering and Web Developer as well."
+	},
+	{
+		"name": "John Doe",
+		"about": "Head Chef and team lead."
+	},
+    {
+        "name": "Jane Doe",
+        "about": "Dish washer."
+    }
+]}

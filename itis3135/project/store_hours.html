@@ -12,101 +12,80 @@
     <link rel="icon" href="images/orchard_catering_logo_300x300.png"> 
     <title>Client Project: Orchard Catering - [Store Hours]</title>
 
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" 
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
         crossorigin="anonymous">
     </script>
 
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script> <!--accordion js-->
+
+    <script src="scripts/menu_java.js"></script>
+    <script src="../scripts/w3.js"></script>
+
 </head>
 
 <body>
 
-    <header>
-        <!--insert logo into header-->
-        <h1><img src="images/orchard_catering_logo_300x300.png" alt="This is going to be a slide show"><br>Orchard Catering</h1>
-    </header>
+    <header w3-include-HTML="components/header.html"></header>
 
-        <nav>
-            &#x272D;
-            <a href="index.html">Home Page</a>
-            &#x272D;
-            <a href="menu.html">Menu</a>
-            &#x272D;
-            <a href="store_hours.html">Store Hours</a>
-            &#x272D;
-            <a href="donations.html">Donations</a>
-            &#x272D;
-            <a href="about_us.html">About Us</a>
-            &#x272D;
-        </nav>
+    <nav w3-include-HTML="components/navigation.html"></nav>
 
     <main>
-        <h2>Store Hours</h2>
+        <div class="homePageBox">
+            <h2>Store Hours</h2>
+        </div>
 
         <br>
         <div class="menuPageDiv">
             
-            <p class="storeHourParagraphs">
-                Hours of Operation:
-            </p>
-                <br>
-                <!--class needed to fix inline from home page-->
-                <ul class="storeHour">
-                    <li>Monday - 8:00am - 9:00pm</li>
-                    <br>
-                    <li>Tuesday - 8:00am - 9:00pm</li>
-                    <br>
-                    <li>Wednesday - 8:00am - 9:00pm</li>
-                    <br>
-                    <li>Thursday - 8:00am - 9:00pm</li>
-                    <br>
-                    <li>Friday - 8:00am - 11:00pm</li>
-                    <br>
-                    <li>Saturday - 8:00am - 11:00pm</li>
-                    <br>
-                    <li>Sunday - 1:00pm - 7:00pm</li>
-                    <br>
-                </ul>
-                <br>
-            <p class="storeHourParagraphs">Off on all National Holidays!</p> 
+            <div id="accordion">
+                <h3>Hours on Normal Days</h3>
+                <div>
+                    <p>Monday - 8:00am - 9:00pm</p>
+                    <p>Tuesday - 8:00am - 9:00pm</p>
+                    <p>Wednesday - 8:00am - 9:00pm</p>
+                    <p>Thursday - 8:00am - 9:00pm</p>
+                    <p>Friday - 8:00am - 11:00pm</p>
+                    <p>Saturday - 8:00am - 11:00pm</p>
+                    <p>Sunday - 1:00pm - 7:00pm</p>
+                </div>
+    
+                <h3>Holiday Operational Hours</h3>
+                <div>
+                    <p>Christmas - 8:00am - 1:00pm</p>
+                    <p>ThanksGiving - 8:00am - 7:00pm</p>
+                    <p>Valentines Day - 8:00am - 7:00pm</p>
+                    <p>Labor Day - 8:00am - 9:00pm</p>
+                    <p>Presidents Day - 8:00am - 11:00pm</p>
+                    <p>GroundHog Day - Off</p>
+                </div>
+    
+                <h3> Yearly Days Off</h3>
+                <div>
+                    <P>To be fair to our employees we will have reduced staff on holiday events.</P>
 
-            <img class="storeHourImg"src="images/holiday_planning(718x188).jpg" alt="out of the office written in the sand to show that the company does not work on holidays">
+                    <P>Any other emergency cancellations will done at least 2 months in advance with a full refund.</P>
+            
+                </div>
+            </div>
+
+            <br>
+
+            <img class="storeHourImg" src="images/holiday_planning(718x188).jpg" alt="out of the office written in the sand to show that the company does not work on holidays">
 
         </div>
 
+        
     </main>
 
-    <footer>
-		<nav>
-            &#x272D;
-            <a href="index.html">Home Page</a>
-            &#x272D;
-            <a href="menu.html">Menu</a>
-            &#x272D;
-            <a href="store_hours.html">Store Hours</a>
-            &#x272D;
-            <a href="donations.html">Donations</a>
-            &#x272D;
-            <a href="about_us.html">About Us</a>
-            &#x272D;
-        </nav>
-		
-		<p class="page-built"><a href="../brand/index.html">&copy; Angry Dyslexic Beaver co.</a></p>
-		
-		<div class="validateButtons">
-            
-            <a href="https://validator.w3.org/check?uri=referer">
-                Validate Html
-            </a>
-    
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                Validate CSS
-            </a>
-		</div>
+    <!--footer navigation-->
+    <footer w3-include-HTML="components/footer.html"></footer>
 
-	</footer>
+    <!--js code to add in the components.-->
+    <script src="scripts/component_script.js"></script>  
 
-    <script src="client_project.js"></script>
 </body>
 
 </html>
